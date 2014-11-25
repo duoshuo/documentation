@@ -1,6 +1,4 @@
-### 评论相关接口
-
-#### POST `/posts/create.json` 发表评论接口
+### POST `/posts/create.json` 发表评论接口
   - `short_name`* <String> 站点注册的多说二级域名
   - `secret`* <String> 站点密钥
   - `message`* <String> 评论内容
@@ -13,18 +11,3 @@
   - `remote_auth` <String> `remote_auth` 串是判断用户是否登录的依据。
   - `jwt` <String> 用户身份信息
   - `access_token` <String> SSO 登录获取的 `access_token`
-
-#### GET `/posts/import.json` 同步评论接口
-  - `short_name`* <String> 站点注册的多说二级域名
-  - `secret`* <String> 站点密钥
-  - `posts`* <Map/Array> 评论列表
-    - `post_key`* 这条评论在当前站点的 ID
-    - `thread_key`* 这条评论所对应文章在当前站点的 ID
-    - `message`* 评论内容
-    
-#### GET `/log/list.json` 同步评论到本地的通知接口
-  - `short_name`* <String> 站点注册的多说二级域名
-  - `secret`* <String> 站点密钥
-  - `since_id` <int64> `0` 同步开始的记录 ID
-  - `limit` <int> `50` 最大条数，1 ~ 200
-  - `order` <String> `desc|asc`
