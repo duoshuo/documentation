@@ -10,16 +10,16 @@ $ curl -X GET \
   threads    =  4ff1cbc43ae636b72a00001d
 ```
 #### 返回数据参数
-- `code` <Int>
-- `errorMessage` <String>
+- `code` <Int> 结果码。`0` 为成功, 失败时为错误码。
+- `errorMessage` <String> 错误消息。当 `code` 不为 `0` 时，返回错误消息。
 - `response` <Object>
-- `thread_id` <String> 文章在多说数据库中的 ID
-- `thread_key` <String> 文章在原站点中的 ID 或其他唯一标识
-- `comments` <Number> 文章评论数
-- `likes` <Number> 文章被点「喜欢」的次数
-- `views` <Number> 文章被阅读数
-- `weibo_reposts` <Number> 文章的新浪微博转发数
-- `qqt_reposts` <Number> 文章的腾讯微博转发数
+  - `thread_id` <String> 文章在多说数据库中的 ID
+  - `thread_key` <String> 文章在原站点中的 ID 或其他唯一标识
+  - `comments` <Number> 文章评论数
+  - `likes` <Number> 文章被点「喜欢」的次数
+  - `views` <Number> 文章被阅读数
+  - `weibo_reposts` <Number> 文章的新浪微博转发数
+  - `qqt_reposts` <Number> 文章的腾讯微博转发数
 
 #### 返回数据范例
 ```js
