@@ -12,7 +12,7 @@
 
 此页面列举了所有接口列表与大概的请求字段，如有需要查看请求范例，或阅读返回字段以及错误代码，可以点击到相关接口的详述页面进行阅读。
 
-#### 评论相关接口
+#### [评论相关接口](./API/posts.md)
 - POST `/posts/create.json` 发表评论接口
   - `short_name`* <String> 站点注册的多说二级域名
   - `secret`* <String> 站点密钥
@@ -40,7 +40,7 @@
   - `limit` <int> `50` 最大条数，1 ~ 200
   - `order` <String> `desc|asc`
 
-#### 文章相关接口
+#### [文章相关接口](./API/threads.md)
 - GET `/threads/counts.json` 获得当前文章评论数和转发数接口
   - `short_name`* <String> 站点注册的多说二级域名
   - `threads`* <String> 你需要获取的文章的 `thread-key`, 如有多个 `thread-key` 以逗号分割。
@@ -58,7 +58,7 @@
   - `limit`* <int>
   - `order` <String> `desc|asc` 返回的评论的排序规则
 
-#### 站点相关接口
+#### [站点相关接口](./API/sites.md)
 - GET `/sites/listTopThreads.json` 获取站点中每日/每周/每月/总评论数最多的文章
   - `short_name`* <String> 站点注册的多说二级域名
   - `range` <String> `daily|weekly|monthly|all` 获取的范围
@@ -72,7 +72,7 @@
     - `user_key`* <String> 这个用户在用户站点中的 ID（**注意：**此ID不是用户在多说的ID）
     - `name`* <String> 用户的显示名
 
-#### 用户相关接口
+#### [用户相关接口](./API/users.md)
 - POST `/users/import.json` 同步用户接口
   - `short_name`* <String> 站点注册的多说二级域名
   - `secret`* <String> 站点密钥
@@ -82,7 +82,7 @@
 - GET `/users/profile.json` 获得用户数据
   - `user_id`* <String> 用户ID
 
-#### 错误代码
+#### 错误代码(./API/errors.md)
   - API 错误代码列表
 
 **TIP**: 接口描述中带 * 号的接口需要鉴权，字段描述中带 * 号的字段是必须提供的字段，字段可选值中默认指是第一位，例如在 `/threads/listPosts.json` 接口中查询字段 `order` 的可选值是 `desc` 或者 `asc`，默认为 `desc`
