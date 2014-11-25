@@ -12,7 +12,7 @@ $ curl -X GET \
 #### 返回数据参数
 - `code` <Int> 结果码。`0` 为成功, 失败时为错误码。
 - `errorMessage` <String> 错误消息。当 `code` 不为 `0` 时，返回错误消息。
-- `response` <Object>
+- `response` <Object> 多说 API 返回结果中，通常在 `response` 中含有主要返回数据。当 `code` 为 `0` 时返回。
   - `thread_id` <String> 文章在多说数据库中的 ID
   - `thread_key` <String> 文章在原站点中的 ID 或其他唯一标识
   - `comments` <Number> 文章评论数

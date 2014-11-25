@@ -82,7 +82,7 @@
 - GET `/users/profile.json` 获得用户数据
   - `user_id`* <String> 用户ID
 
-#### 错误代码(./API/errors.md)
+#### [错误代码](./API/errors.md)
   - API 错误代码列表
 
 **TIP**: 接口描述中带 * 号的接口需要鉴权，字段描述中带 * 号的字段是必须提供的字段，字段可选值中默认指是第一位，例如在 `/threads/listPosts.json` 接口中查询字段 `order` 的可选值是 `desc` 或者 `asc`，默认为 `desc`
