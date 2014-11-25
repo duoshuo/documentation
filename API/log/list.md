@@ -64,8 +64,7 @@ $ curl -X GET \
       "thread_key":"108"
     },
     "date":1342187893
-  },
-  {
+  },{
     "log_id":"888999",
     "user_id":"378928",
     "action":"delete",

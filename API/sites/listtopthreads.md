@@ -36,8 +36,7 @@ $ curl -X GET \
     likes: 20,
     comments: 1384,
     reposts: 0
-  },
-  {
+  },{
     thread_id: "2",
     title: "安装了多说的网站举例",
     created_at: "2011-12-02T12:57:14+08:00",
