@@ -4,7 +4,7 @@
 
 #### 请求范例
 ```bash
-curl -X GET \
+$ curl -X GET \
   http://api.duoshuo.com/threads/counts.json? \
   short_name =  official& \
   threads    =  4ff1cbc43ae636b72a00001d
