@@ -1,7 +1,9 @@
-### GET `/posts/import.json` 同步评论接口
-  - `short_name`* <String> 站点注册的多说二级域名
-  - `secret`* <String> 站点密钥
-  - `posts`* <Map/Array> 评论列表
+## 同步评论接口
+
+### GET `/posts/import.json`
+  - `short_name`* `<String>` 站点注册的多说二级域名
+  - `secret`* `<String>` 站点密钥
+  - `posts`* `<Map/Array>` 评论列表
     - `post_key`* 这条评论在当前站点的 ID
     - `thread_key`* 这条评论所对应文章在当前站点的 ID
     - `message`* 评论内容
@@ -21,13 +23,7 @@
 #### 请求范例
 暂无
 
-#### 返回数据参数
-- `code` <Int> 结果码。`0` 为成功, 失败时为错误码。
-- `errorMessage` <String> 错误消息。当 `code` 不为 `0` 时，返回错误消息。
-- `response` <Object> 多说 API 返回结果中，通常在 `response` 中含有主要返回数据。当 `code` 为 `0` 时返回。`response` 是以 `post_key` 为主键，`post_id` 为值的数组
-  - `post_id` <Int64> 评论在多说的对应 ID
-
-#### 返回数据范例
+#### 返回范例
 ```js
 {
   "code":0,
@@ -39,3 +35,9 @@
   }
 }
 ```
+
+#### 返回参数
+- `code` `<Int>` 结果码。`0` 为成功, 失败时为错误码。
+- `errorMessage` `<String>` 错误消息。当 `code` 不为 `0` 时，返回错误消息。
+- `response` `<Object>` 多说 API 返回结果中，通常在 `response` 中含有主要返回数据。当 `code` 为 `0` 时返回。`response` 是以 `post_key` 为主键，`post_id` 为值的数组
+  - `post_id` `<Int64>` 评论在多说的对应 ID

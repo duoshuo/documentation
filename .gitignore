@@ -1,0 +1,5 @@
+_book
+*.DS_*
+node_modules
+bower_*
+*.log

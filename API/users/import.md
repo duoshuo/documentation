@@ -1,7 +1,9 @@
-### POST `/users/import.json` 同步用户接口
-  - `short_name`* <String> 站点注册的多说二级域名
-  - `secret`* <String> 站点密钥
-  - `users`* <Map/Array> 用户列表
+## 同步用户接口
+
+### POST `/users/import.json`
+  - `short_name`* `<String>` 站点注册的多说二级域名
+  - `secret`* `<String>` 站点密钥
+  - `users`* `<Map/Array>` 用户列表
     - `user_key`* 这个用户在当前站点的 ID
     - `name`* 用户的显示名
     - `role` 用户在原站点中的身份, `administrator` 管理员, `editor` 编辑, `author` 作者, `user` 用户。管理员将具有多说站点管理后台的所有控制权限，编辑将具有一定评论管理和数据查看权限。
@@ -13,13 +15,7 @@
 #### 请求范例
 暂无
 
-#### 返回数据参数
-- `code` <Int> 结果码。`0` 为成功, 失败时为错误码。
-- `errorMessage` <String> 错误消息。当 `code` 不为 `0` 时，返回错误消息。
-- `response` <Object> 多说 API 返回结果中，通常在 `response` 中含有主要返回数据。当 `code` 为 `0` 时返回。`response` 是以 `user_key` 为主键，`user_id` 为值的数组
-  - `user_id` <Int32> 用户在多说的对应 ID
-
-#### 返回数据范例
+#### 返回范例
 ```js
 {
   "code":0,
@@ -31,3 +27,9 @@
   }
 }
 ```
+
+#### 返回参数
+- `code` `<Int>` 结果码。`0` 为成功, 失败时为错误码。
+- `errorMessage` `<String>` 错误消息。当 `code` 不为 `0` 时，返回错误消息。
+- `response` `<Object>` 多说 API 返回结果中，通常在 `response` 中含有主要返回数据。当 `code` 为 `0` 时返回。`response` 是以 `user_key` 为主键，`user_id` 为值的数组
+- `user_id` `<Int32>` 用户在多说的对应 ID
