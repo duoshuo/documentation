@@ -1,7 +1,0 @@
-{
-  "name": "duoshuo-documentation",
-  "scripts": {
-    "dev": "gitbook serve .",
-    "build": "gitbook build --output=./gh-pages"
-  }
-}
