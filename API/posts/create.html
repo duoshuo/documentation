@@ -1,0 +1,567 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>发表评论 /posts/create.json | 多说 API 接口文档</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.4.1">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <link rel="next" href="../../API/posts/import.html" />
+    
+    
+    <link rel="prev" href="../../#" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1.1" data-basepath="../.." data-revision="1418121787514">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	    
+            <li>
+                <a href="http://duoshuo.com" target="blank" class="custom-link">多说</a>
+            </li>
+    	
+    	    
+            <li>
+                <a href="http://dev.duoshuo.com/discussion" target="blank" class="custom-link">多说开发者论坛</a>
+            </li>
+    	
+    	
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="#">
+            
+                
+                    <a href="../../#">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         评论接口
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="1.1" data-path="API/posts/create.html">
+            
+                
+                    <a href="../../API/posts/create.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         发表评论 /posts/create.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="API/posts/import.html">
+            
+                
+                    <a href="../../API/posts/import.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         同步评论 /posts/import.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="API/log/list.html">
+            
+                
+                    <a href="../../API/log/list.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         同步评论通知 /log/list.json
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="#">
+            
+                
+                    <a href="../../#">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         文章接口
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="API/threads/counts.html">
+            
+                
+                    <a href="../../API/threads/counts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         文章评论/转发 /threads/counts.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="API/threads/import.html">
+            
+                
+                    <a href="../../API/threads/import.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         同步文章到多说 /threads/import.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="API/threads/listposts.html">
+            
+                
+                    <a href="../../API/threads/listposts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         当前文章的评论 /threads/listPosts.json
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="#">
+            
+                
+                    <a href="../../#">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         站点接口
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="API/sites/listtopthreads.html">
+            
+                
+                    <a href="../../API/sites/listtopthreads.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         评论数最多文章 /sites/listTopThreads.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="API/sites/join.html">
+            
+                
+                    <a href="../../API/sites/join.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         SSO 单点登录 /sites/join.json
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="#">
+            
+                
+                    <a href="../../#">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         用户接口
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="API/users/import.html">
+            
+                
+                    <a href="../../API/users/import.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         同步用户 /users/import.json
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="API/users/profile.html">
+            
+                
+                    <a href="../../API/users/profile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         用户数据 /users/profile.json
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="API/errors.html">
+            
+                
+                    <a href="../../API/errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         错误代码
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >多说 API 接口文档</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_3">
+                    
+                        <h2 id="">发表评论接口</h2>
+<h3 id="post-postscreatejson">POST <code>/posts/create.json</code></h3>
+<ul>
+<li><code>short_name</code>* <code>&lt;String&gt;</code> 站点注册的多说二级域名</li>
+<li><code>secret</code>* <code>&lt;String&gt;</code> 站点密钥</li>
+<li><code>message</code>* <code>&lt;String&gt;</code> 评论内容</li>
+<li><code>thread_key</code> <code>&lt;String&gt;</code> 被评论文章在原站点的文章标识，如果有 <code>thread_id</code> ，此参数是可选参数，否则是必选参数。</li>
+<li><code>thread_id</code> <code>&lt;String&gt;</code> 被评论文章的多说文章ID，如果有 <code>thread_key</code>，此参数是可选参数，否则是必选参数。</li>
+<li><code>parent_id</code> <code>&lt;String&gt;</code> 父评论（被回复的评论）的 ID</li>
+<li><code>author_name</code> <code>&lt;String&gt;</code> 作者名字。如果已登陆多说，此参数是可选参数，否则是必选参数。</li>
+<li><code>author_email</code> <code>&lt;String&gt;</code> 作者邮箱。如果已登陆多说，此参数是可选参数，否则是必选参数。</li>
+<li><code>author_url</code> <code>&lt;String&gt;</code> 作者网址</li>
+<li><code>remote_auth</code> <code>&lt;String&gt;</code> <code>remote_auth</code> 串是判断用户是否登录的依据。</li>
+<li><code>jwt</code> <code>&lt;String&gt;</code> 用户身份信息</li>
+<li><code>access_token</code> <code>&lt;String&gt;</code> SSO 登录获取的 <code>access_token</code></li>
+</ul>
+<h4 id="">请求范例</h4>
+<p>匿名发表新评论:</p>
+<pre><code class="lang-bash">$ curl -X POST \
+  http://duoshuo.com/api/posts/create.json? \
+  short_name = official&amp; \
+  author_email = jp.chenyang%<span class="hljs-number">40</span>gmail.com&amp; \
+  author_name = Perchouli&amp; \
+  thread_id = <span class="hljs-number">1152923703638301959</span>&amp; \
+  author_url = http%<span class="hljs-number">3</span>A%<span class="hljs-number">2</span>F%<span class="hljs-number">2</span>Fduoshuo.com&amp; \
+  message = 匿名发表新评论
+</code></pre>
+<p>登陆后发表评论:</p>
+<pre><code class="lang-bash">$ curl -X POST \
+  http://duoshuo.com/api/posts/create.json? \
+  short_name = official&amp; \
+  remote_auth = remote_auth%<span class="hljs-number">3</span>AW10%<span class="hljs-number">3</span>D+f6b2d4ddd2c960d9a4fa41cefee55bdb1876bea8+<span class="hljs-number">1354681746</span>&amp; \
+  thread_id = <span class="hljs-number">1152923703638301959</span>&amp; \
+  message = 登陆多说发表评论
+</code></pre>
+<h4 id="">返回范例</h4>
+<pre><code class="lang-js">{
+  <span class="hljs-string">"code"</span>:<span class="hljs-number">0</span>,
+  <span class="hljs-string">"response"</span>:
+    {
+    <span class="hljs-string">"post_id"</span>: <span class="hljs-string">"1152985276292923003"</span>,
+    <span class="hljs-string">"parent_id"</span>:  <span class="hljs-string">"1152985276292923000"</span>,
+    <span class="hljs-string">"thread_id"</span>: <span class="hljs-string">"1152923703638301959"</span>,
+    <span class="hljs-string">"status"</span>: <span class="hljs-string">"approved"</span>,
+    <span class="hljs-string">"source"</span>: <span class="hljs-string">"duoshuo"</span>,
+    <span class="hljs-string">"author_key"</span>: <span class="hljs-string">"1"</span>,
+    <span class="hljs-string">"author_name"</span>: <span class="hljs-string">"Perchouli"</span>,
+    <span class="hljs-string">"author_url"</span>: <span class="hljs-string">"http://weibo.com/perchouli"</span>,
+    <span class="hljs-string">"message"</span>: <span class="hljs-string">"登陆多说发表评论"</span>,
+    <span class="hljs-string">"created_at"</span>: <span class="hljs-string">"2012-11-01T11:36:38+08:00"</span>,
+    <span class="hljs-string">"likes"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"reports"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"comments"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"reposts"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">"type"</span>: <span class="hljs-string">""</span>,
+    <span class="hljs-string">"privileges"</span>: {
+      <span class="hljs-string">"delete"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"update"</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-string">"moderate"</span>: <span class="hljs-literal">true</span>
+    },
+    <span class="hljs-string">"author"</span>:{
+      <span class="hljs-string">"user_id"</span>: <span class="hljs-string">"2288"</span>,
+      <span class="hljs-string">"name"</span>: <span class="hljs-string">"Perchouli"</span>,
+      <span class="hljs-string">"url"</span>: <span class="hljs-string">"http://weibo.com/perchouli"</span>,
+      <span class="hljs-string">"avatar_url"</span>: <span class="hljs-string">"http://tp3.sinaimg.cn/1893629610/50/1292295250/1"</span>,
+      <span class="hljs-string">"domain"</span>: <span class="hljs-string">""</span>,
+      <span class="hljs-string">"connected_services"</span>: {
+        <span class="hljs-string">"weibo"</span>: <span class="hljs-string">"1893629610"</span>,
+        <span class="hljs-string">"douban"</span>: <span class="hljs-string">"3382783"</span>,
+        <span class="hljs-string">"baidu"</span>: <span class="hljs-string">"839143886"</span>
+      }
+    }
+  }
+}
+</code></pre>
+<h4 id="">返回参数</h4>
+<ul>
+<li><code>code</code> <code>&lt;Int&gt;</code> 结果码。<code>0</code> 为成功, 失败时为错误码。</li>
+<li><code>errorMessage</code> <code>&lt;String&gt;</code> 错误消息。当 <code>code</code> 不为 <code>0</code> 时，返回错误消息。</li>
+<li><code>response</code> <code>&lt;Object&gt;</code> 多说 API 返回结果中，通常在 <code>response</code> 中含有主要返回数据。当 <code>code</code> 为 <code>0</code> 时返回。</li>
+<li><code>post_id</code> <code>&lt;Int64&gt;</code> 评论 ID。请注意，<code>post_id</code> 为 64 位二进制整数，MySQL 数据类型建议定义为 <code>bigInt</code>。</li>
+<li><code>parent_id</code> <code>&lt;Int64&gt;</code> 父评论 ID。请注意，<code>thread_id</code> 为 64 位二进制整数，MySQL数据类型建议定义为 <code>bigInt</code></li>
+<li><code>thread_id</code> <code>&lt;Int64&gt;</code> 文章在多说的 ID。请注意，<code>thread_id</code> 为 64 位二进制整数，MySQL 数据类型建议定义为 <code>bigInt</code>。</li>
+<li><code>status</code> <code>&lt;String&gt;</code> 评论状态。创建评论时，可能的状态：<code>approved</code> 已经通过；<code>pending</code> 待审核；<code>spam</code> 垃圾评论。</li>
+<li><code>source</code> <code>&lt;String&gt;</code> 评论来源</li>
+<li><code>author_key</code> <code>&lt;String&gt;</code> 作者邮箱。有可能为空字符串。</li>
+<li><code>author_name</code> <code>&lt;String&gt;</code> 作者显示名。有可能为空。</li>
+<li><code>author_url</code> <code>&lt;String&gt;</code> 作者网址。有可能为空字符串。</li>
+<li><code>message</code> <code>&lt;String&gt;</code> 评论的内容</li>
+<li><code>created_at</code> <code>&lt;String&gt;</code> 评论创建日期，格式示例：<code>2012-07-13T21:58:13+08:00</code></li>
+<li><code>likes</code> <code>&lt;Int&gt;</code> 评论被点「赞」的次数</li>
+<li><code>reports</code> <code>&lt;Int&gt;</code> 评论被「举报」的次数</li>
+<li><code>type</code> <code>&lt;String&gt;</code> 类型。现在均为空</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../#" class="navigation navigation-prev " aria-label="Previous page: 评论接口"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../API/posts/import.html" class="navigation navigation-next " aria-label="Next page: 同步评论 /posts/import.json"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
